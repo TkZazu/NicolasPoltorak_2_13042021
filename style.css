@@ -2,7 +2,66 @@ i
 {
     color: blue;
 }
+
 .position
 {
     color: black;
 }
+
+header
+{
+    background-color: white;
+    position:  fixed;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    height: 100px;
+}
+
+.logo-menu
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    margin-left: 30px;
+}
+
+.main
+{
+    margin-top: 100px;
+}
+
+.logo
+{
+    width: 100px;
+}
+
+nav
+{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+}
+
+.menu a
+{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    border: 2px transparent solid;
+    padding: 0 20px;
+
+}
+
+.menu
+{
+    display: flex;
+}
+
+.menu a.actif
+{
+    border-top: 2px blue solid;
+}
+
