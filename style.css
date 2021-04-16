@@ -4,26 +4,18 @@ body, nav
     margin: 0 auto;
 }
 
-i
+@font-face /* Police de la page */
 {
-    color: #0065FC;
+    font-family: "raleway";
+    src: url(./police/Raleway-VariableFont_wght.ttf);
 }
 
-.position
+header, body, footer
 {
-    color: black;
+    font-family: "raleway";
 }
 
-.petit-i
-{
-    background-color: #0065FC;
-    color: white;
-    border-radius: 50%;
-    border: 2px #F2F2F2 solid;
-
-}
-
-header
+header /*mise en forme du header */
 {
     background-color: white;
     position:  fixed;
@@ -33,7 +25,7 @@ header
     height: 100px;
 }
 
-.logo-menu
+.logo-menu /* placement logo */
 {
     display: flex;
     align-items: center;
@@ -42,22 +34,22 @@ header
     margin-left: 30px;
 }
 
-.main
-{
-    margin-top: 100px;
-}
-
 .logo
 {
     width: 100px;
 }
 
-nav
+nav /* placement nav */
 {
     display: flex;
     justify-content: space-between;
     width: 100%;
     height: 100%;
+}
+
+.menu
+{
+    display: flex;
 }
 
 .menu a
@@ -70,24 +62,9 @@ nav
 
 }
 
-.menu
-{
-    display: flex;
-}
-
 .menu a.actif
 {
     border-top: 2px #0065FC solid;
-}
-
-@font-face {
-    font-family: "raleway";
-    src: url(./police/Raleway-VariableFont_wght.ttf);
-}
-
-header, body, footer
-{
-    font-family: "raleway";
 }
 
 .menu a.inscrire
@@ -96,7 +73,7 @@ header, body, footer
     color: #0065FC;
 }
 
-a /* Liens pas défaut (non survolés) */
+a /* Liens nav par défaut non survolés */
 {
     text-decoration: none;
     color: black;
@@ -107,12 +84,27 @@ a:hover /* Apparence au survol */
     color: #0065FC;
 }
 
+.main
+{
+    margin-top: 100px;
+}
+
 form
 {
     display: flex;
     align-items: center;
     width: 400px;
     height: 50px;
+}
+
+i
+{
+    color: #0065FC;
+}
+
+.position
+{
+    color: black;
 }
 
 .info
@@ -187,4 +179,13 @@ span
 {
     color: #0065FC;
     cursor: pointer;
+}
+
+.petit-i
+{
+    background-color: #0065FC;
+    color: white;
+    border-radius: 50%;
+    border: 2px #F2F2F2 solid;
+
 }
