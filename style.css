@@ -1,3 +1,9 @@
+body, nav
+{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
 i
 {
     color: blue;
@@ -133,3 +139,37 @@ form button
     cursor: pointer;
 }
 
+#filter
+{
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 830px;
+    margin: 30px 0;
+}
+
+div .filtres
+{
+    display: flex;
+    align-items: center;
+    border-radius: 25px;
+    border: 3px #F2F2F2 solid;
+}
+
+.icone
+{
+    height: 50px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #DEEBFF;
+    border-radius: 50%;
+    margin: -3px;
+}
+
+span
+{
+    margin: 0 15px;
+}
