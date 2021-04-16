@@ -6,12 +6,21 @@ body, nav
 
 i
 {
-    color: blue;
+    color: #0065FC;
 }
 
 .position
 {
     color: black;
+}
+
+.petit-i
+{
+    background-color: #0065FC;
+    color: white;
+    border-radius: 50%;
+    border: 2px #F2F2F2 solid;
+
 }
 
 header
@@ -172,4 +181,10 @@ div .filtres
 span
 {
     margin: 0 15px;
+}
+
+.filtres:hover
+{
+    color: #0065FC;
+    cursor: pointer;
 }
