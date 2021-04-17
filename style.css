@@ -52,26 +52,26 @@ nav /* placement nav */
         display: flex;
     }
 
-    .menu a
-    {
-        display: flex;
-        align-items: center;
-        height: 100%;
-        border: 2px transparent solid;
-        padding: 0 20px;
+        .menu a
+        {
+            display: flex;
+            align-items: center;
+            height: 100%;
+            border: 2px transparent solid;
+            padding: 0 20px;
 
-    }
+        }
 
-    .menu a.actif
-    {
-        border-top: 2px #0065FC solid;
-    }
+            .menu a.actif
+            {
+                border-top: 2px #0065FC solid;
+            }
 
-    .menu a.inscrire
-    {
-        font-weight: bold;
-        color: #0065FC;
-    }
+            .menu a.inscrire
+            {
+                font-weight: bold;
+                color: #0065FC;
+            }
 
     a /* Liens nav par défaut non survolés */
     {
@@ -79,17 +79,17 @@ nav /* placement nav */
         color: black;
     }
 
-    a:hover /* Apparence au survol */
-    {
-        color: #0065FC;
-    }
+        a:hover /* Apparence au survol */
+        {
+            color: #0065FC;
+        }
 
     .main
     {
         margin-top: 100px;
     }
 
-form
+form /* barre de recherche */
 {
     display: flex;
     align-items: center;
@@ -128,27 +128,27 @@ form
         font-weight: bold;
     }
 
-    form button
-    {
-        height: 100%;
-        border: none;
-        border-radius: 0 15px 15px 0;
-        background-color: #0065FC;
-        color: white;
-        font-weight: bold;
-        padding: 0 10px;
-        cursor: pointer;
-    }
-
-        #filter
+        form button
         {
+            height: 100%;
+            border: none;
+            border-radius: 0 15px 15px 0;
+            background-color: #0065FC;
+            color: white;
             font-weight: bold;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            width: 830px;
-            margin: 30px 0;
+            padding: 0 10px;
+            cursor: pointer;
         }
+
+    #filter /* filtres */
+    {
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 830px;
+        margin: 30px 0;
+    }
 
         div .filtres
         {
@@ -157,88 +157,161 @@ form
             border-radius: 25px;
             border: 3px #F2F2F2 solid;
         }
+        
+            .filtres:hover
+            {
+                color: #0065FC;
+                cursor: pointer;
+            }
 
-        .icone
-        {
-            height: 50px;
-            width: 50px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background-color: #DEEBFF;
-            border-radius: 50%;
-            margin: -3px;
-        }
+    .icone /* phrase info */
+    {
+        height: 50px;
+        width: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #DEEBFF;
+        border-radius: 50%;
+        margin: -3px;
+    }
 
-        span
-        {
-            margin: 0 15px;
-        }
+    span
+    {
+        margin: 0 15px;
+    }
 
-        .filtres:hover
-        {
-            color: #0065FC;
-            cursor: pointer;
-        }
 
-        .petit-i
-        {
-            background-color: #0065FC;
-            color: white;
-            border-radius: 50%;
-            border: 2px #F2F2F2 solid;
-            margin-right: 5px   ;
-        }
+    .petit-i
+    {
+        background-color: #0065FC;
+        color: white;
+        border-radius: 50%;
+        border: 2px #F2F2F2 solid;
+        margin-right: 5px   ;
+    }
 
-.habitation
+.habitation /* espace habitation */
 {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     width: 700px;
     padding: 15px 30px;
     background-color: #F2F2F2;
     border-radius: 20px;
 }
 
-.top
-{
-    width: 100%;
-    font-weight: bold;
-}
+    .top
+    {
+        width: 100%;
+        font-weight: bold;
+    }
 
-.section1
-{
-    margin-bottom: 40px;
-    background-color: white;
-    border-radius: 20px;
-    border: 4px white solid;
-    box-shadow: 4px 4px 4px #efebeb;
-}
+    .section1
+    {
+        margin-bottom: 40px;
+        background-color: white;
+        border-radius: 20px;
+        border: 4px white solid;
+        box-shadow: 4px 4px 4px #efebeb;
+    }
 
-.star
-{
-    margin: 10px;
-}
+        .section1 img
+        {
+            width: 200px;
+            height: 150px;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+        }
 
-.afficher
+            .section1:hover
+            {
+                cursor: pointer;
+            }
+
+        .title /* texte des images */
+        {
+            margin: 5px;
+        }
+        
+    .plus:hover
+    {
+        color: #0065FC;
+        cursor: pointer;
+    }
+.afficher /* bouton "afficher plus" */
 {
     width: 100%;
     font-weight: bold;
     margin-top: 0;
 }
 
-.title
+.tete /* placement "section1" et "aside" */
 {
-    margin: 10px;
+    display: flex;
+    justify-content: space-between;
 }
 
-
-
-.section1 img
+aside /* partie "les plus populaires */
 {
-    width: 200px;
-    height: 100px;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
+    background-color: #f2f2f2;
+    border-radius: 20px;
+    padding: 15px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+    .aside
+    {
+        width: 350px;
+        display: flex;
+        background-color: white;
+        border: 4px white solid;
+        border-radius: 20px;
+        box-shadow: 4px 4px 4px #efebeb;
+    }
+
+        .aside img
+        {
+            width: 150px;
+            height: 155px;
+            border-top-left-radius: 20px;
+            border-bottom-left-radius: 20px;
+        }
+
+    .aside:hover
+    {
+        cursor: pointer;
+    }
+
+.titre  /* alignement titre et icone */
+{
+    display: flex;
+    align-items: center;
+}
+
+.graph /* icone de titre */
+{
+    width: 5%;
+}
+
+.populaire /* titre */
+{
+    width: 95%;
+    font-weight: bold;
+}
+
+.colonne /* placement du texte des images */
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: 5px;
+}
+
+.none /* notation des logements */
+{
+    color: #f2f2f2;
 }
