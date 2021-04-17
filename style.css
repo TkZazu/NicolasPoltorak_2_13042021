@@ -235,17 +235,18 @@ form /* barre de recherche */
             margin: 5px;
         }
         
-    .plus:hover
-    {
-        color: #0065FC;
-        cursor: pointer;
-    }
 .afficher /* bouton "afficher plus" */
 {
     width: 100%;
     font-weight: bold;
     margin-top: 0;
 }
+
+    .plus:hover /* afficher plus */
+    {
+        color: #0065FC;
+        cursor: pointer;
+    }
 
 .tete /* placement "section1" et "aside" */
 {
@@ -315,3 +316,127 @@ aside /* partie "les plus populaires */
 {
     color: #f2f2f2;
 }
+
+.activity /*activités */
+{
+    display: flex;
+    justify-content: space-around;
+    height: 450px;
+}
+
+    .activity img
+    {
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+
+    .activity p
+    {
+        margin: 10px;
+        font-weight: bold;
+    }
+
+.section2
+{
+    border: 1px transparent solid;
+    border-radius: 20px;
+    width: 23%;
+    box-shadow: 4px 4px 4px #efebeb;
+}
+
+    .section2 img
+    {
+        width: 100%;
+        height: 90%;
+    }
+
+.elem1 /* photo l'une en dessous de l'autre */
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 23%;
+}
+.picture1 /* bordure individuel des photos */
+{
+    border: 1px transparent solid;
+    border-radius: 20px;
+    height: 50%;
+    box-shadow: 4px 4px 4px #efebeb;
+}
+
+    .picture1 img
+    {
+        width: 100%;
+        height: 80%;
+    }
+
+.picture2
+{
+    border: 1px transparent solid;
+    border-radius: 20px;
+    height: 40%;
+    box-shadow: 4px 4px 4px #efebeb;
+}
+
+    .picture2 img
+    {
+        width: 100%;
+        height: 75%;
+    }
+
+.picture3
+{
+    border: 1px transparent solid;
+    border-radius: 20px;
+    height: 45%;
+    box-shadow: 4px 4px 4px #efebeb;
+}
+    .picture3 img
+    {
+        width: 100%;
+        height: 80%;
+    }
+
+.picture4
+{
+    border: 1px transparent solid;
+    border-radius: 20px;
+    height: 45%;
+    box-shadow: 4px 4px 4px #efebeb;
+}
+    .picture4 img
+    {
+        width: 100%;
+        height: 80%;
+    }
+
+.section2:hover
+{
+    cursor: pointer;
+}
+
+.clic:hover
+{
+    cursor: pointer;
+}
+
+footer /* bas de page */
+{
+    display: flex;
+    justify-content: space-around;
+    background-color: #F2F2F2;
+    margin-top: 60px;
+}
+
+ul
+{
+    list-style-type: none;
+    padding: 0;
+}
+
+    li:hover
+    {
+        cursor: pointer;
+        color: #0065FC;
+    }
