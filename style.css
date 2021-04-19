@@ -195,18 +195,26 @@ form /* barre de recherche */
 {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
     width: 700px;
-    padding: 15px 30px;
     background-color: #F2F2F2;
     border-radius: 20px;
+    margin-right: 50px;
+    max-width: 70%;
+    padding: 15px 30px;
 }
 
     .top
     {
         width: 100%;
         font-weight: bold;
+        height: 50px;
     }
+
+        .top h2
+        {
+            margin: 5px;
+        }
 
     .section1
     {
@@ -215,14 +223,15 @@ form /* barre de recherche */
         border-radius: 20px;
         border: 4px white solid;
         box-shadow: 4px 4px 4px #efebeb;
+        overflow: hidden;
+        max-width: 30%;
     }
 
         .section1 img
         {
-            width: 200px;
+            width: 100%;
             height: 150px;
-            border-top-left-radius: 20px;
-            border-top-right-radius: 20px;
+            object-fit: cover;
         }
 
             .section1:hover
@@ -251,35 +260,35 @@ form /* barre de recherche */
 .tete /* placement "section1" et "aside" */
 {
     display: flex;
-    justify-content: space-between;
+    width: 100%;
 }
 
 aside /* partie "les plus populaires */
 {
     background-color: #f2f2f2;
     border-radius: 20px;
-    padding: 15px 30px;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    max-width: 25%;
+    padding: 15px 30px;
 }
 
     .aside
     {
-        width: 350px;
+        width: 100%;
         display: flex;
         background-color: white;
         border: 4px white solid;
         border-radius: 20px;
         box-shadow: 4px 4px 4px #efebeb;
+        overflow: hidden;
+        margin-bottom: 40px;
     }
 
         .aside img
         {
             width: 150px;
             height: 155px;
-            border-top-left-radius: 20px;
-            border-bottom-left-radius: 20px;
         }
 
     .aside:hover
@@ -291,6 +300,7 @@ aside /* partie "les plus populaires */
 {
     display: flex;
     align-items: center;
+    height: 50px;
 }
 
 .graph /* icone de titre */
@@ -320,107 +330,74 @@ aside /* partie "les plus populaires */
 .activity /*activités */
 {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     height: 450px;
 }
 
-    .activity img
+    .activity .img-description
     {
-        border-top-left-radius: 20px;
-        border-top-right-radius: 20px;
-    }
-
-    .activity p
-    {
-        margin: 10px;
+        display: flex;
+        align-items: center;
         font-weight: bold;
+        height: 50px;
+        margin: 0 10px;
     }
 
-.section2
+.column
 {
-    border: 1px transparent solid;
+    display: flex;
+    margin: 0 20px;
+}
+
+.activity .column:first-child
+{
+    margin-left: 0;
+}
+
+.activity .column:last-child
+{
+    margin-right: 0;
+}
+
+.activity .two-column .picture:first-child
+{
+    margin-bottom: 40px;
+}
+
+.picture
+{
+    display: flex;
+    flex-direction: column;
     border-radius: 20px;
-    width: 23%;
+    overflow: hidden;
     box-shadow: 4px 4px 4px #efebeb;
 }
 
-    .section2 img
-    {
-        width: 100%;
-        height: 90%;
-    }
 
-.elem1 /* photo l'une en dessous de l'autre */
+.one-column
+{
+    height: 100%;
+
+}
+
+.two-column /* photo l'une en dessous de l'autre */
 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 23%;
-}
-.picture1 /* bordure individuel des photos */
-{
-    border: 1px transparent solid;
-    border-radius: 20px;
-    height: 50%;
-    box-shadow: 4px 4px 4px #efebeb;
 }
 
-    .picture1 img
+    .picture img
     {
         width: 100%;
-        height: 80%;
+        height: calc(100% - 50px);
+        object-fit: cover;
     }
 
-.picture2
-{
-    border: 1px transparent solid;
-    border-radius: 20px;
-    height: 40%;
-    box-shadow: 4px 4px 4px #efebeb;
-}
-
-    .picture2 img
-    {
-        width: 100%;
-        height: 75%;
-    }
-
-.picture3
-{
-    border: 1px transparent solid;
-    border-radius: 20px;
-    height: 45%;
-    box-shadow: 4px 4px 4px #efebeb;
-}
-    .picture3 img
-    {
-        width: 100%;
-        height: 80%;
-    }
-
-.picture4
-{
-    border: 1px transparent solid;
-    border-radius: 20px;
-    height: 45%;
-    box-shadow: 4px 4px 4px #efebeb;
-}
-    .picture4 img
-    {
-        width: 100%;
-        height: 80%;
-    }
-
-.section2:hover
+.picture:hover
 {
     cursor: pointer;
 }
-
-.clic:hover
-{
-    cursor: pointer;
-}
-
 footer /* bas de page */
 {
     display: flex;
