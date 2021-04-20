@@ -318,8 +318,13 @@ aside /* partie "les plus populaires */
 {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    margin-left: 5px;
+    margin: 0 5px;
+    width: 50%;
+}
+
+.colonne h4
+{
+    margin: 10px 0;
 }
 
 .none /* notation des logements */
@@ -343,12 +348,28 @@ aside /* partie "les plus populaires */
         margin: 0 10px;
     }
 
+    .sec1-description
+    {
+        display: flex;
+        flex-direction: column;
+        margin: 0 10px;
+    }
+
 .column
 {
     display: flex;
     margin: 0 20px;
 }
 
+.étoile
+{
+    margin: 5px 0;
+}
+
+.star
+{
+    padding: 10px 0;
+}
 .activity .column:first-child
 {
     margin-left: 0;
@@ -401,9 +422,16 @@ aside /* partie "les plus populaires */
 footer /* bas de page */
 {
     display: flex;
-    justify-content: space-around;
     background-color: #F2F2F2;
     margin-top: 60px;
+    width: 110%;
+    margin-left: -55px;
+}
+
+.footer
+{
+    width: 26%;
+    margin: 25px 15px 0 50px;
 }
 
 ul
@@ -417,3 +445,8 @@ ul
         cursor: pointer;
         color: #0065FC;
     }
+
+.footer:last-child
+{
+    margin-left: 60px;
+}
