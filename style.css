@@ -149,6 +149,11 @@ form /* barre de recherche */
         margin: 30px 0;
     }
 
+    span
+    {
+        margin: 10px 15px;
+    }
+
         div .filtres
         {
             display: flex;
@@ -199,6 +204,8 @@ form /* barre de recherche */
 
     .top
     {
+        display: flex;
+        align-items: center;
         width: 100%;
         font-weight: bold;
         height: 50px;
@@ -217,7 +224,7 @@ form /* barre de recherche */
         border: 4px white solid;
         box-shadow: 4px 4px 4px #efebeb;
         overflow: hidden;
-        max-width: 30%;
+        width: 30%;
     }
 
         .section1 img
