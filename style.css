@@ -290,6 +290,7 @@ aside /* partie "les plus populaires */
         {
             width: 150px;
             height: 155px;
+            object-fit: cover;
         }
 
     .aside:hover
