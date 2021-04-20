@@ -31,7 +31,6 @@ header /*mise en forme du header */
         align-items: center;
         justify-content: center;
         height: 100%;
-        margin-left: 30px;
     }
 
     .logo
@@ -176,12 +175,6 @@ form /* barre de recherche */
         margin: -3px;
     }
 
-    span
-    {
-        margin: 0 15px;
-    }
-
-
     .petit-i
     {
         background-color: #0065FC;
@@ -271,6 +264,7 @@ aside /* partie "les plus populaires */
     flex-direction: column;
     max-width: 25%;
     padding: 15px 30px;
+    margin-left: 30px;
 }
 
     .aside
@@ -332,6 +326,25 @@ aside /* partie "les plus populaires */
     color: #f2f2f2;
 }
 
+.column /* section des photos générale */
+{
+    display: flex;
+    margin: 0 20px;
+}
+
+.one-column
+{
+    height: 100%;
+
+}
+
+.two-column /* photo l'une en dessous de l'autre */
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 .activity /*activités */
 {
     display: flex;
@@ -348,6 +361,21 @@ aside /* partie "les plus populaires */
         margin: 0 10px;
     }
 
+        .activity .column:first-child
+        {
+            margin-left: 0;
+        }
+
+        .activity .column:last-child
+        {
+            margin-right: 0;
+        }
+
+        .activity .two-column .picture:first-child
+        {
+            margin-bottom: 40px;
+        }
+
     .sec1-description
     {
         display: flex;
@@ -355,57 +383,15 @@ aside /* partie "les plus populaires */
         margin: 0 10px;
     }
 
-.column
-{
-    display: flex;
-    margin: 0 20px;
-}
 
-.étoile
+.étoile /* décallage étoile de notation */
 {
     margin: 5px 0;
 }
 
-.star
+.star 
 {
     padding: 10px 0;
-}
-.activity .column:first-child
-{
-    margin-left: 0;
-}
-
-.activity .column:last-child
-{
-    margin-right: 0;
-}
-
-.activity .two-column .picture:first-child
-{
-    margin-bottom: 40px;
-}
-
-.picture
-{
-    display: flex;
-    flex-direction: column;
-    border-radius: 20px;
-    overflow: hidden;
-    box-shadow: 4px 4px 4px #efebeb;
-}
-
-
-.one-column
-{
-    height: 100%;
-
-}
-
-.two-column /* photo l'une en dessous de l'autre */
-{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
 }
 
     .picture img
@@ -415,10 +401,20 @@ aside /* partie "les plus populaires */
         object-fit: cover;
     }
 
-.picture:hover
-{
-    cursor: pointer;
-}
+        .picture
+    {
+        display: flex;
+        flex-direction: column;
+        border-radius: 20px;
+        overflow: hidden;
+        box-shadow: 4px 4px 4px #efebeb;
+    }
+
+    .picture:hover
+    {
+        cursor: pointer;
+    }
+
 footer /* bas de page */
 {
     display: flex;
@@ -428,11 +424,16 @@ footer /* bas de page */
     margin-left: -55px;
 }
 
-.footer
-{
-    width: 26%;
-    margin: 25px 15px 0 50px;
-}
+    .footer
+    {
+        width: 26%;
+        margin: 25px 15px 0 50px;
+    }
+    
+        .footer:last-child
+        {
+            margin-left: 60px;
+        }
 
 ul
 {
@@ -445,8 +446,3 @@ ul
         cursor: pointer;
         color: #0065FC;
     }
-
-.footer:last-child
-{
-    margin-left: 60px;
-}
