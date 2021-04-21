@@ -452,5 +452,5 @@ ul
     li:hover
     {
         cursor: pointer;
-        color: #0065FC;
+        color: red;
     }
