@@ -445,12 +445,13 @@ footer /* bas de page */
     margin-top: 60px;
     width: 110%;
     margin-left: -55px;
+    padding: 30px 55px;
+    margin-bottom: 50px;
 }
 
     .footer
     {
         width: 26%;
-        margin: 25px 15px 0 50px;
     }
     
         .footer:last-child
@@ -469,3 +470,8 @@ ul
         cursor: pointer;
         color:#0065FC;
     }
+
+footer ul li
+{
+    margin: 7px 0;
+}
