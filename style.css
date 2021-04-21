@@ -154,6 +154,12 @@ form /* barre de recherche */
         margin: 10px 15px;
     }
 
+    span:hover
+    {
+        cursor: pointer;
+        color: #0065FC;
+    }
+
         div .filtres
         {
             display: flex;
@@ -197,7 +203,7 @@ form /* barre de recherche */
     width: 700px;
     background-color: #F2F2F2;
     border-radius: 20px;
-    margin-right: 50px;
+    margin-right: 25px;
     max-width: 70%;
     padding: 15px 30px;
 }
@@ -209,6 +215,7 @@ form /* barre de recherche */
         width: 100%;
         font-weight: bold;
         height: 50px;
+        margin-bottom: 20px;
     }
 
         .top h2
@@ -269,9 +276,9 @@ aside /* partie "les plus populaires */
     border-radius: 20px;
     display: flex;
     flex-direction: column;
-    max-width: 25%;
-    padding: 15px 30px;
-    margin-left: 30px;
+    max-width: 30%;
+    padding: 15px 30px 30px 30px;
+    margin-left: 25px;
 }
 
     .aside
@@ -283,7 +290,6 @@ aside /* partie "les plus populaires */
         border-radius: 20px;
         box-shadow: 4px 4px 4px #efebeb;
         overflow: hidden;
-        margin-bottom: 40px;
     }
 
         .aside img
@@ -298,11 +304,20 @@ aside /* partie "les plus populaires */
         cursor: pointer;
     }
 
+.conteneur-aside
+{
+    display: flex;
+    flex-direction: column;
+    height: calc(100% - 70px);
+    justify-content: space-between;
+}
+
 .titre  /* alignement titre et icone */
 {
     display: flex;
     align-items: center;
     height: 50px;
+    margin-bottom: 20px;
 }
 
 .graph /* icone de titre */
