@@ -518,16 +518,34 @@ footer ul li
         display: flex;
         flex-direction: column;
         width: 100%;
-        background-color: none;
-        border-radius: none;
-        margin-right: none;
-        max-width: none;
-        padding: none;
+        background-color: white;
+        border-radius: 0;
+        margin-right: 0;
+        max-width: 100%;
+        padding: 15px 30px;
+        align-items: center;
     }
 
         .top
         {
-            margin: 20px 0 20px 25px;
+            margin: 15px 0;
+        }
+
+        .section1
+        {
+            width: 85%;
+            margin-bottom: 15px;
+            margin-right: 50px;
+        }
+
+            .section1 img
+            {
+                height: 150px;
+            }
+        
+        .afficher
+        {
+            margin-top: 20px;
         }
 
     aside
@@ -571,6 +589,34 @@ footer ul li
     .marg
     {
         margin: 0;
+    }
+
+    .Act
+    {
+        margin-left: 30px;
+    }
+
+
+    .activity
+    {
+        height: 800px;
+        flex-direction: column;
+        padding: 15px 30px;
+    }
+
+    .column
+    {
+        margin: 0;
+    }
+
+    .picture
+    {
+        margin-bottom: 30px;
+    }
+
+    .picture img
+    {
+        height: 150px;
     }
 }
     
