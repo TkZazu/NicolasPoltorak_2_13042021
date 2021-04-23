@@ -1,10 +1,12 @@
+/* ********************* corps général *************************** */
 body, nav
 {
     max-width: 1200px;
     margin: 0 auto;
 }
 
-@font-face /* Police de la page */
+/* *********************** police de la page ********************* */
+@font-face
 {
     font-family: "raleway";
     src: url(./police/Raleway-VariableFont_wght.ttf);
@@ -15,7 +17,8 @@ body, nav
         font-family: "raleway";
     }
 
-header /*mise en forme du header */
+/* ***************************** headeer ************************* */
+header
 {
     background-color: white;
     position:  fixed;
@@ -25,7 +28,7 @@ header /*mise en forme du header */
     height: 100px;
 }
 
-    .logo-menu /* placement logo */
+    .logo-menu
     {
         display: flex;
         align-items: center;
@@ -38,7 +41,15 @@ header /*mise en forme du header */
         width: 100px;
     }
 
-nav /* placement nav */
+.responsive
+{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* **************************** menu nav *************************** */
+nav
 {
     display: flex;
     justify-content: space-between;
@@ -72,13 +83,13 @@ nav /* placement nav */
                 color: #0065FC;
             }
 
-    a /* Liens nav par défaut non survolés */
+    a
     {
         text-decoration: none;
         color: black;
     }
 
-        a:hover /* Apparence au survol */
+        a:hover
         {
             color: #0065FC;
         }
@@ -88,7 +99,8 @@ nav /* placement nav */
         margin-top: 100px;
     }
 
-form /* barre de recherche */
+/* *************************** filtres **************************** */
+form
 {
     display: flex;
     align-items: center;
@@ -139,7 +151,7 @@ form /* barre de recherche */
             cursor: pointer;
         }
 
-    #filter /* filtres */
+    #filter
     {
         font-weight: bold;
         display: flex;
@@ -174,7 +186,7 @@ form /* barre de recherche */
                 cursor: pointer;
             }
 
-    .icone /* phrase info */
+    .icone
     {
         height: 50px;
         width: 50px;
@@ -195,7 +207,8 @@ form /* barre de recherche */
         margin-right: 5px   ;
     }
 
-.habitation /* espace habitation */
+/* ********************** hébergements ************************** */
+.habitation
 {
     display: flex;
     flex-wrap: wrap;
@@ -246,31 +259,32 @@ form /* barre de recherche */
                 cursor: pointer;
             }
 
-        .title /* texte des images */
+        .title
         {
             margin: 5px;
         }
         
-.afficher /* bouton "afficher plus" */
+.afficher
 {
     width: 100%;
     font-weight: bold;
     margin-top: 0;
 }
 
-    .plus:hover /* afficher plus */
+    .plus:hover
     {
         color: #0065FC;
         cursor: pointer;
     }
 
-.tete /* placement "section1" et "aside" */
+.tete
 {
     display: flex;
     width: 100%;
 }
 
-aside /* partie "les plus populaires */
+/* *********************** les plus populaires ******************** */
+aside
 {
     background-color: #f2f2f2;
     border-radius: 20px;
@@ -319,7 +333,7 @@ aside /* partie "les plus populaires */
     justify-content: space-between;
 }
 
-.titre  /* alignement titre et icone */
+.titre
 {
     display: flex;
     align-items: center;
@@ -327,18 +341,18 @@ aside /* partie "les plus populaires */
     margin-bottom: 20px;
 }
 
-.graph /* icone de titre */
+.graph
 {
     width: 5%;
 }
 
-.populaire /* titre */
+.populaire
 {
     width: 95%;
     font-weight: bold;
 }
 
-.colonne /* placement du texte des images */
+.colonne
 {
     margin: 0 5px;
     width: 50%;
@@ -349,31 +363,13 @@ aside /* partie "les plus populaires */
     margin: 10px 0;
 }
 
-.none /* notation des logements */
+.none
 {
     color: #f2f2f2;
 }
 
-.column /* section des photos générale */
-{
-    display: flex;
-    margin: 0 20px;
-}
-
-.one-column
-{
-    height: 100%;
-
-}
-
-.two-column /* photo l'une en dessous de l'autre */
-{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.activity /*activités */
+/* ************************ activités **************************** */
+.activity
 {
     display: flex;
     justify-content: space-between;
@@ -414,7 +410,26 @@ aside /* partie "les plus populaires */
     }
 
 
-.étoile /* décallage étoile de notation */
+.column
+{
+    display: flex;
+    margin: 0 20px;
+}
+
+.one-column
+{
+    height: 100%;
+
+}
+
+.two-column
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.étoile
 {
     margin: 5px 0;
 }
@@ -445,7 +460,8 @@ aside /* partie "les plus populaires */
         cursor: pointer;
     }
 
-footer /* bas de page */
+/* ********************* bas de page **************************** */
+footer 
 {
     display: flex;
     background-color: #F2F2F2;
@@ -459,6 +475,7 @@ footer /* bas de page */
     .footer
     {
         width: 26%;
+        margin-right: 70px;
     }
     
         .footer:last-child
@@ -482,3 +499,78 @@ footer ul li
 {
     margin: 7px 0;
 }
+
+/* ******************** Responsive ************************* */
+@media screen and (max-width: 500px)
+{
+    body, nav, footer
+    {
+        max-width: 500px;
+    }
+
+    .tete
+    {
+        flex-direction: column-reverse;
+    }
+
+    .habitation
+    {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        background-color: none;
+        border-radius: none;
+        margin-right: none;
+        max-width: none;
+        padding: none;
+    }
+
+        .top
+        {
+            margin: 20px 0 20px 25px;
+        }
+
+    aside
+    {
+        border-radius: 0px;
+        max-width: 100%;
+        margin-left: 0px;
+    }
+
+    .titre
+    {
+        margin-top: 20px;
+    }
+    
+        .conteneur-aside
+    {
+        height: 500px;
+    }
+
+    .aside img
+    {
+        width: 140px;
+        height: 140px;
+    }
+
+    .texte
+    {
+        margin: 0 20px;
+    }
+
+    .colonne
+    {
+        margin: 0;
+    }
+
+    .colonne h4
+    {
+        font-size: 20px;
+    }
+
+    .marg
+    {
+        margin: 0;
+    }
+}
+    
