@@ -26,6 +26,7 @@ header
     top: 0px;
     left: 0px;
     height: 100px;
+    z-index: 10;
 }
 
     .logo-menu
@@ -91,6 +92,20 @@ nav
         {
             color: #0065FC;
         }
+
+    .offset
+    {
+        position: absolute;
+        top: -115px;
+        left: 0;
+    }
+
+    .Act
+    {
+        position: relative;
+    }
+
+    
 
     .main
     {
@@ -235,6 +250,13 @@ form
     padding: 15px 30px;
 }
 
+.container-hab
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
     .top
     {
         display: flex;
@@ -243,6 +265,7 @@ form
         font-weight: bold;
         height: 50px;
         margin-bottom: 20px;
+        position: relative;
     }
 
         .top h2
@@ -294,7 +317,6 @@ form
 .tete
 {
     display: flex;
-    width: 100%;
 }
 
 /* *********************** les plus populaires ******************** */
@@ -455,7 +477,7 @@ aside
 
     .picture img
     {
-        width: 100%;
+        width: 270px;
         height: calc(100% - 50px);
         object-fit: cover;
     }
@@ -515,11 +537,12 @@ footer ul li
 }
 
 /* ******************** Responsive ************************* */
-@media screen and (max-width: 500px)
+@media screen and (max-width: 767px)
 {
-    body, nav, footer
+
+    body, nav
     {
-        max-width: 500px;
+        max-width: none;
     }
 
     header
@@ -530,6 +553,7 @@ footer ul li
     .tete
     {
         flex-direction: column-reverse;
+        margin: 0 -15px;
     }
 
     form
@@ -565,6 +589,7 @@ footer ul li
 
     .main
     {
+        margin: 0 15px;
         margin-top: 180px;
     }
 
@@ -580,15 +605,11 @@ footer ul li
 
     .habitation
     {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
+        width: initial;
         background-color: white;
-        border-radius: 0;
-        margin-right: 0;
         max-width: 100%;
-        padding: 15px 30px;
-        align-items: center;
+        padding: 0 15px;
+        margin-right: 0;
     }
 
         .top
@@ -622,8 +643,8 @@ footer ul li
     {
         border-radius: 0px;
         max-width: 100%;
-        width: 100%;
-        margin-left: 0px;
+        margin-left: 0;
+        padding: 0 15px;
     }
 
     .titre
@@ -638,13 +659,25 @@ footer ul li
 
     .aside
     {
+        height: 150px;
         margin-bottom: 15px;
+        box-sizing: border-box;
+    }
+
+    .aside h4
+    {
+        font-size: 16px;
+    }
+
+    .aside p
+    {
+        font-size: 14px;
     }
 
     .aside img
     {
         width: 140px;
-        height: 140px;
+        height: initial;
     }
 
     .texte
@@ -657,11 +690,6 @@ footer ul li
         margin: 0;
     }
 
-    .colonne h4
-    {
-        font-size: 20px;
-    }
-
     .marg
     {
         margin: 0;
@@ -669,15 +697,21 @@ footer ul li
 
     .Act
     {
-        margin-left: 30px;
+        margin-left: 0;
     }
+
+    .afficher span, header span
+    {
+        margin: 0;
+    }
+
+
 
 
     .activity
     {
         height: initial;
         flex-direction: column;
-        padding: 15px 30px;
         width: 100%;
     }
 
@@ -694,6 +728,7 @@ footer ul li
     .picture img
     {
         height: 150px;
+        width: 100%;
     }
 
     #filter
@@ -710,19 +745,20 @@ footer ul li
     footer
     {
         flex-direction: column;
+        padding: 0 15px;
         margin: 0;
-        padding: 0;
+        width: initial;
     }
 
     .footer
     {
         width: 100%;
-        margin: 15px 30px;
+        margin: 15px 0;
     }
 
     .footer:last-child 
     {
-        margin: 15px 30px;
+        margin: 0;
     }
 
     nav
@@ -750,6 +786,11 @@ footer ul li
     .bleu
     {
         color: #0065FC;
+    }
+
+    .offset
+    {
+        top: -170px;
     }
 }
     
