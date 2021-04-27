@@ -511,11 +511,6 @@ footer
         margin-right: 70px;
     }
     
-        .footer:last-child
-        {
-            margin-left: 60px;
-        }
-
 ul
 {
     list-style-type: none;
