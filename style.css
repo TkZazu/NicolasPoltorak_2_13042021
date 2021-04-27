@@ -340,6 +340,7 @@ aside
         border-radius: 20px;
         box-shadow: 4px 4px 4px #efebeb;
         overflow: hidden;
+        box-sizing: border-box;
     }
 
         .aside img
