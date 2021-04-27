@@ -537,12 +537,156 @@ footer ul li
 }
 
 /* ******************** Responsive ************************* */
+@media screen and (max-width: 1023px)
+{
+
+    .logo-menu
+    {
+        margin: 0 15px;
+    }
+
+    .s-un .tablette
+    {
+        display: flex;
+        justify-content: center;
+        border: none;
+    }
+
+
+    form
+    {
+        width: initial;
+    }
+
+    form input
+    {
+        width: 350px;
+    }
+
+    .taille
+    {
+        display: none;
+    }
+
+    #filter
+    {
+        justify-content: space-around;
+        max-width: 100%;
+    }
+
+    .main
+    {
+        margin: 0 20px;
+        margin-top: 100px;
+    }
+
+    .tete
+    {
+        flex-direction: column;
+    }
+
+    .habitation
+    {
+        max-width: 100%;
+        width: initial;
+        padding: 5px 15px;
+        margin: 0;
+        margin-bottom: 30px;
+    }
+
+    aside
+    {
+        flex-wrap: wrap;
+        max-width: 100%;
+        margin: 0;
+        margin-bottom: 30px;
+        padding: 20px 15px;
+    }
+
+    .conteneur-aside
+    {
+        flex-direction: row;
+    }
+
+    .aside
+    {
+        width: 30%;
+    }
+
+    .aside img
+    {
+        height: 185px;
+        width: 100px;
+    }
+
+    .marg
+    {
+        margin: 0;
+    }
+
+    .Act
+    {
+        margin: 10px;
+    }
+
+    .activity
+    {
+        height: initial;
+        flex-wrap: wrap;
+    }
+
+    .picture img
+    {
+        width: 100%;
+    }
+
+    .one-column
+    {
+        width: 45%;
+    }
+
+    .two-column
+    {
+        width: 45%;
+    }
+
+    .column
+    {
+        margin: 0;
+        height: 600px;
+        margin-bottom: 30px;
+    }
+
+    footer
+    {
+        margin: 0;
+        padding: 0;
+        justify-content: space-around;
+    }
+
+    .footer
+    {
+        margin: 0;
+    }
+    
+    .footer:last-child
+    {
+        margin: 0;
+    }
+
+}
+
 @media screen and (max-width: 767px)
 {
 
     body, nav
     {
         max-width: none;
+    }
+
+    .logo-menu
+    {
+        margin: 0;
     }
 
     header
@@ -655,6 +799,7 @@ footer ul li
         .conteneur-aside
     {
         height: initial;
+        flex-direction: column;
     }
 
     .aside
@@ -662,6 +807,7 @@ footer ul li
         height: 150px;
         margin-bottom: 15px;
         box-sizing: border-box;
+        width: initial;
     }
 
     .aside h4
@@ -705,9 +851,6 @@ footer ul li
         margin: 0;
     }
 
-
-
-
     .activity
     {
         height: initial;
@@ -718,6 +861,8 @@ footer ul li
     .column
     {
         margin: 0;
+        height: initial;
+        width: 100%;
     }
 
     .picture
@@ -735,6 +880,17 @@ footer ul li
     {
         flex-wrap: wrap;
         width: 100%;
+        justify-content: space-between;
+    }
+
+    .s-un .tablette
+    {
+        justify-content: normal;
+    }
+
+    .s-un h4
+    {
+        margin: 0;
     }
 
     #filter .taille
