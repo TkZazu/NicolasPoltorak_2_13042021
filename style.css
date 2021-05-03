@@ -84,6 +84,7 @@ nav
 
     a
     {
+        text-decoration: none;
         color: black;
     }
 
@@ -277,7 +278,7 @@ form
         margin-bottom: 40px;
         background-color: white;
         border-radius: 20px;
-        border: 4px white solid;
+        border: 4px #F2F2F2 solid;
         box-shadow: 4px 4px 4px #efebeb;
         overflow: hidden;
         width: 30%;
@@ -335,7 +336,7 @@ aside
         width: 100%;
         display: flex;
         background-color: white;
-        border: 4px white solid;
+        border: 4px #F2F2F2 solid;
         border-radius: 20px;
         box-shadow: 4px 4px 4px #efebeb;
         overflow: hidden;
@@ -410,6 +411,7 @@ aside
     display: flex;
     justify-content: space-between;
     height: 450px;
+    flex-direction: column;
 }
 
     .activity .img-description
@@ -445,6 +447,11 @@ aside
         height: calc(100% - 150px);
     }
 
+    .contenu
+    {
+        display: flex;
+        height: 400px;
+    }
 
 .column
 {
